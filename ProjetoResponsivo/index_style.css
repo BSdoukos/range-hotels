@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, #firstsection p{
+    font-family: 'Oxygen', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::after{
+    content: " ";
+    clear: both;
+    display: block;
+}
+header{
+    margin-bottom: 50px;
+}
+header img, main img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    background-color: rgb(90, 32, 102);
+    line-height: 3.125em;
+    padding: 1em 0 1em 5px;
+}
+header a{
+    color: white;
+}
+nav ul li:hover{
+    background-color: rgb(98, 46, 109);
+}
+main{
+    width: 100%;
+}
+main a{
+    background-color: #58c4c4;  
+    padding: 0.9375em;
+    border-radius: 5px;
+    width: 8.125em;
+    color: white;
+    display: inline-block;
+}
+main a:hover{
+    background-color: #37a0a0; 
+}
+#firstsection{
+    text-align: center;
+    margin-bottom: 45px;
+}
+#firstsection img{
+    display: none;
+}
+#firstsection h2{
+    color: rgb(85, 26, 119);
+    font-size: 1.35em;
+    margin-bottom: 1.38888889em;
+    letter-spacing: 0.04629629629em;
+}
+#firstsection p{
+    font-weight: bold;
+    color: rgb(167, 120, 199);
+    margin: 1.03025em;
+    line-height: 1.5em;
+}
+#middlesection{
+    text-align: center;
+    margin: 0 40px 80px;
+}
+#middlesection i[class|="icon"]{
+    font-size: 3.4375em;
+    color: rgb(85, 26, 119);
+}
+#middlesection h2{
+    color: rgb(85, 26, 119);
+    font-size: 1.20em;
+    text-transform: uppercase;
+}
+#middlesection p{
+    line-height: 1.5em;
+}
+#lastsection{
+    margin: 0 30px 100px;
+}
+#lastsection h2{
+    text-transform: uppercase;
+    color: rgb(85, 26, 119);
+    font-size: 1.25em;
+    letter-spacing: 0.175em;
+}
+#lastsection a{
+    text-align: center;
+}
+#lastsection div{
+    margin-bottom: 3.125em;
+}
+footer{
+    background-color: #25303e;
+    width: 100%;
+    padding-bottom: 1.875em; 
+    text-align: center;
+    color: rgb(121, 131, 146);
+}
+footer ul{
+    background-color: #303d4c;
+    text-align: center;
+    padding: 0.3125em 0.625em 0 0;
+}
+footer ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+footer ul li:nth-child(2){
+    margin: 0 20px;
+}
+footer p{
+    margin: 0 15px;
+}
+
+/* END OF FIRST LAYOUT */
+/* START OF FIRST MEDIA QUERY */
+
+@media screen and (min-width: 48.75em) and (max-width: 62.5em){
+    header, nav ul{
+        margin-bottom: 0;
+    }
+    header img{
+        float: left;
+        margin: 5px 0 0 10px;
+    }
+    header a{
+        color: rgb(85, 26, 119);
+        font-size: 1.125em;
+    }
+    nav{
+        float: right;
+    }
+    nav ul{
+        background-color: transparent;
+        margin: 0 30px 0 0;
+        word-spacing: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    #firstsection{
+        background-color: rgb(85, 26, 119);
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #firstsection img{
+        display: unset;
+        width: 80px;
+        margin-bottom: 15px;
+    }
+    #firstsection h2{
+        margin-top: 0;
+        color: white;
+    }
+    #middlesection div{
+        float: left;
+        width: 46.3%;
+    }
+    #middlesection div:nth-child(odd){
+        margin-right: 3.3%;
+    }
+    #middlesection div:nth-child(even){
+        margin-left: 3.3%;
+    }
+    #middlesection div:nth-child(1), #middlesection div:nth-child(2){
+        margin-bottom: 30px;
+    }
+    #middlesection div:nth-child(3), #middlesection div:nth-child(4){
+        margin-bottom: 60px;
+    }
+    #lastsection a{
+        float: right;
+    }
+    #lastsection h2:last-of-type{
+        margin-top: 50px;
+    }
+
+}
+
+/* END OF FIRST MEDIA QUERY */
+/* START OF SECOND MEDIA QUERY */
+
+@media screen and (min-width: 62.5em) and (max-width: 87.5em){
+    header, nav ul{
+        margin-bottom: 0;
+    }
+    header img{
+        float: left;
+        margin: 5px 0 0 10px;
+    }
+    header a{
+        color: rgb(85, 26, 119);
+        font-size: 1.125em;
+    }
+    nav{
+        float: right;
+    }
+    nav ul{
+        background-color: transparent;
+        margin: 0 30px 0 0;
+        word-spacing: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    #firstsection{
+        background: url(images/bg_topo_1198x670.jpg) no-repeat;
+        background-size: cover;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 580px;
+    }
+    #firstsection div{
+        position: relative;
+        top: 230px;
+    }
+    #firstsection img{
+        display: unset;
+        width: 80px;
+        margin-bottom: 15px;
+    }
+    #firstsection h2, #firstsection p{
+        color: white;
+    }
+    #firstsection h2{
+        margin-top: 0;
+    }
+    #middlesection div{
+        float: left;
+        width: 46.3%;
+    }
+    #middlesection div:nth-child(odd){
+        margin-right: 3.3%;
+    }
+    #middlesection div:nth-child(even){
+        margin-left: 3.3%;
+    }
+    #middlesection div:nth-child(1), #middlesection div:nth-child(2){
+        margin-bottom: 30px;
+    }
+    #middlesection div:nth-child(3), #middlesection div:nth-child(4){
+        margin-bottom: 60px;
+    }
+    #lastsection a{
+        float: right;
+    }
+    #lastsection h2:last-of-type{
+        margin-top: 50px;
+    }
+
+}
+
+/* END OF SECOND MEDIA QUERY */
+/* START OF THIRD MEDIA QUERY */
+
+@media screen and (min-width: 87.5em){
+    header, nav ul{
+        margin-bottom: 0;
+    }
+    header img{
+        float: left;
+        margin: 5px 0 0 100px;
+    }
+    header a{
+        color: rgb(85, 26, 119);
+        font-size: 1em;
+    }
+    nav{
+        float: right;
+    }
+    nav ul{
+        background-color: transparent;
+        margin: 0 110px 0 0;
+        word-spacing: 30px;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    #firstsection{
+        background: url(images/bg_topo_1600x1374.jpg) no-repeat;
+        background-size: cover;
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 650px;
+    }
+    #firstsection div{
+        position: relative;
+        top: 180px;
+    }
+    #firstsection img{
+        display: unset;
+        width: 110px;
+    }
+    #firstsection h2, #firstsection p{
+        color: white;
+    }
+    #firstsection p{
+        margin: 0 335px 20px;
+    }
+    #middlesection{
+        margin: 0 110px 80px;
+        overflow: auto;
+    }
+    #middlesection div{
+        width: 22%;
+        float: left;
+    }
+    #middlesection div:nth-child(1), #middlesection div:nth-child(2), #middlesection div:nth-child(3){
+        margin-right: 3%;
+    }
+    #lastsection{
+        margin: 0 80px;
+    }
+    #lastsection div{
+        width: 47%;
+        float: left;
+    }
+    #lastsection div:nth-child(odd){
+        margin-right: 3%;
+    }
+    footer{
+        overflow: auto;
+    }
+    footer ul{
+        margin-top: 0;
+    }
+}
+
+/* END OF THIRD MEDIA QUERY */
